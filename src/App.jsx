@@ -1,18 +1,18 @@
-
 import './App.css'
-
+import Blogs from './Components/Blogs/Blogs'
 function App() {
-
-
   return (
     <>
-      <div className="navbar bg-neutral text-neutral-content">
-        <button className="btn btn-ghost text-xl">daisyUI</button>
-        <h1> Atikur Rahaman</h1>
+      <navbar></navbar>
+      <div className='flex '>
+        <div className='w-[70%] bg-amber-300'>
+          <Blogs></Blogs>
+        </div>
+        <div className='w-[30%] bg-green-500'>
+          <h1>Selective</h1>
+        </div>
       </div>
-
     </>
   )
 }
-
 export default App
