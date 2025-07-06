@@ -11,7 +11,7 @@ const Blogs = () => {
     }, [])
     console.log(blogs);
     return (
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-2'>
               {/* <h1>total:{blogs.length}</h1> */}
               {
                 blogs.map((blog)=><Blog blog={blog}></Blog>)

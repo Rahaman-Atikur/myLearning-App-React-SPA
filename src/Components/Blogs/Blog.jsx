@@ -5,9 +5,9 @@ const Blog = ({ blog }) => {
   return (
     <div className='m-2'>
       {/* <h1>{blog.title}</h1> */}
-      <div className="card  shadow-sm ">
-        <figure>
-          <img
+      <div className="card bg-green-200 shadow-sm ">
+        <figure className='w-60'>
+          <img 
             src={blog.cover}
             alt="Shoes" />
         </figure>
