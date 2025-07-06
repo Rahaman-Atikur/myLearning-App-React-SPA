@@ -3,11 +3,11 @@ import { FaBookmark } from "react-icons/fa";
 
 const Blog = ({ blog }) => {
   return (
-    <div className='m-2'>
+    <div className='m-2 text-black'>
       {/* <h1>{blog.title}</h1> */}
       <div className="card bg-green-200 shadow-sm ">
         <figure className='w-60'>
-          <img 
+          <img
             src={blog.cover}
             alt="Shoes" />
         </figure>
@@ -16,7 +16,10 @@ const Blog = ({ blog }) => {
           <div className="author flex gap-4 justify-around items-center">
             <h3>{blog.author}</h3>
             <img className='w-16' src={blog.author_img} alt="" />
-            <FaBookmark size={25} />
+            <button onClick={() => handleBookmark()}>
+              <FaBookmark size={25} />
+            </button>
+
           </div>
 
           <div className="flex">
