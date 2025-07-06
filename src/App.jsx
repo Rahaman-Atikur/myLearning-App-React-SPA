@@ -4,11 +4,11 @@ function App() {
   return (
     <>
       <navbar></navbar>
-      <div className='flex'>
-        <div className='w-[70%]'>
+      <div className='main-container flex gap-10'>
+        <div className='left-container w-[70%]  text-center'>
           <Blogs></Blogs>
         </div>
-        <div className='w-[30%]'>
+        <div className='right-container w-[30%] bg-gray-600 border-7'>
           {/* <h1>Selective</h1> */}
         </div>
       </div>
