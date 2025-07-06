@@ -9,7 +9,7 @@ function App() {
           <Blogs></Blogs>
         </div>
         <div className='w-[30%] bg-green-500'>
-          <h1>Selective</h1>
+          {/* <h1>Selective</h1> */}
         </div>
       </div>
     </>
