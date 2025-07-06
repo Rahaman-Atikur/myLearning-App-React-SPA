@@ -11,7 +11,7 @@ const Blogs = () => {
     }, [])
     console.log(blogs);
     return (
-        <div>
+        <div className='grid grid-cols-3'>
               {/* <h1>total:{blogs.length}</h1> */}
               {
                 blogs.map((blog)=><Blog blog={blog}></Blog>)
@@ -22,16 +22,3 @@ const Blogs = () => {
 
 export default Blogs;
 
-// {
-//     "id": 1,
-//     "cover": "https://i.ibb.co/84Zfw2n/1.jpg",
-//     "title": "Top 10 ES6 Features You Must Know",
-//     "author_img": "https://i.ibb.co/VvLNdLL/boy1.png",
-//     "author": "Hamza Sohail",
-//     "posted_date": "September 15, 2023",
-//     "reading_time": 5,
-//     "hashtags": [
-//         "beginners",
-//         "es6"
-//     ]
-// }

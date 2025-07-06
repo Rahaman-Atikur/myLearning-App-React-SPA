@@ -5,10 +5,10 @@ function App() {
     <>
       <navbar></navbar>
       <div className='flex'>
-        <div className='w-[70%] bg-amber-300'>
+        <div className='w-[70%]'>
           <Blogs></Blogs>
         </div>
-        <div className='w-[30%] bg-green-500'>
+        <div className='w-[30%]'>
           {/* <h1>Selective</h1> */}
         </div>
       </div>
