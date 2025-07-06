@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <navbar></navbar>
-      <div className='flex '>
+      <div className='flex'>
         <div className='w-[70%] bg-amber-300'>
           <Blogs></Blogs>
         </div>
