@@ -2,10 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import Blogs from './Components/Blogs/Blogs'
 function App() {
-  const [bookmark, setBookmark] = useState();
-  const handleBookmark = () => {
-    console.log();
+  const [bookmark, setBookmark] = useState([]);
+  const handleBookmark = (blog) => {
+    setBookmark([...bookmark, blog]);
   }
+  console.log(bookmark);
   return (
     <>
       <navbar></navbar>
@@ -15,6 +16,9 @@ function App() {
         </div>
         <div className='right-container w-[30%] bg-gray-600 border-7'>
           {/* <h1>Selective</h1> */}
+          {
+            bookmark.map((bookm)=><p>{bookm.title}</p>)
+          }
         </div>
       </div>
     </>
