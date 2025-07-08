@@ -30,7 +30,7 @@ function App() {
         <div className='right-container w-[30%] bg-gray-600 border-7'>
           {/* <h1>Selective</h1> */}
           {
-            bookmark.map((bookm) => <p className='bg-amber-600 p-2 my-4 text-white'>{bookm.title}</p>)
+            bookmark.map((bookm) => <p className='bg-amber-600 p-2 my-4 mx-2 text-white'>{bookm.title}</p>)
           }
         </div>
       </div>
